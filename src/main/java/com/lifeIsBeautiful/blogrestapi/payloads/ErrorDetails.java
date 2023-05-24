@@ -1,4 +1,4 @@
-package com.lifeIsBeautiful.blogrestapi.exception;
+package com.lifeIsBeautiful.blogrestapi.payloads;
 
 import java.time.LocalDateTime;
 import java.util.Date;

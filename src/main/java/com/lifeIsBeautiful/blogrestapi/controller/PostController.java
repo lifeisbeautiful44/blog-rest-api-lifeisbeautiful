@@ -23,7 +23,6 @@ public class PostController {
     @PostMapping
     public ResponseEntity<PostDto> createPost(@Valid @RequestBody PostDto postDto) {
 
-        System.out.println(postDto);
         PostDto savedPostDto = postService.createPost(postDto);
 
         return new ResponseEntity<>(savedPostDto, HttpStatus.CREATED);
@@ -59,5 +58,16 @@ public class PostController {
         String message = postService.deletePostById(postId);
 
         return new ResponseEntity<>(message, HttpStatus.OK);
+    }
+
+    //Build Post by category rest api
+
+    @GetMapping("/category/{id}")
+    public ResponseEntity<List<PostDto>> findPostByCategory(@PathVariable("id") Long categoryId)
+    {
+       List<PostDto> postByCategory = postService.findByCategory(categoryId);
+
+       return new ResponseEntity<>(postByCategory, HttpStatus.OK);
+
     }
 }

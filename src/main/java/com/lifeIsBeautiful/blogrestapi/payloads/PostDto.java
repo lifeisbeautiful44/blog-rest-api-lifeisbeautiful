@@ -24,4 +24,6 @@ public class PostDto {
     @Size(min = 10, message = "Descrption must be atleast 10 character")
     private String content;
     private Set<CommentDto> comments;
+
+    private Long categoryId;
 }

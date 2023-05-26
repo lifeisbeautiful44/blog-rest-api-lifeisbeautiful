@@ -16,5 +16,9 @@ public interface PostService {
 
     String deletePostById(Long postId);
 
+    List<PostDto> findByCategory(Long categoryId);
+
+
+
 
 }

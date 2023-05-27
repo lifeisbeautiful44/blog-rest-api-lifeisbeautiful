@@ -1,5 +1,6 @@
 package com.lifeIsBeautiful.blogrestapi.payloads;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -7,6 +8,10 @@ import lombok.*;
 
 import java.util.Set;
 
+@Schema(
+        description = "PostDto Model Information",
+        name = "PostDto Model"
+)
 @Getter
 @Setter
 @NoArgsConstructor

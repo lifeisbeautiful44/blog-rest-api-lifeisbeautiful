@@ -24,7 +24,9 @@ public class AuthController {
     @Autowired
    private    AuthService authService;
 
-    @PostMapping(value = {"login","sign-in"})
+  //  @PostMapping(value = {"login","sign-in"})
+    @PostMapping("sign-in")
+
     public ResponseEntity<JwtAuthResponse> login(@RequestBody LoginDto loginDto)
     {
        String token=  authService.login(loginDto);
@@ -37,7 +39,9 @@ public class AuthController {
      //  return new ResponseEntity<>(authuser, HttpStatus.OK);
     }
 
-    @PostMapping(value = {"register","sign-up"})
+
+   // @PostMapping(value = {"register","sign-up"})
+   @PostMapping("sign-up")
     public ResponseEntity<String> register(@RequestBody RegisterDto registerDto)
     {
        String registerUser = authService.register(registerDto);

@@ -9,7 +9,7 @@ import lombok.*;
 import java.util.Set;
 
 @Schema(
-        description = "PostDto Model Information",
+        description = "Post Model Information",
         name = "PostDto Model"
 )
 @Getter

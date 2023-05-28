@@ -19,16 +19,12 @@ import org.springframework.context.annotation.Bean;
 				contact = @Contact(
 						name = "Srijansil Bohara",
 						email = "bohara.srijansil44@gmail.com",
-						url = "lifeisbeatiful.io"
-				),
-				license = @License(
-						name = "Apache 2.0"
-					//	url = "lifeisbeatiful.io/license"
+						url = "https://github.com/lifeisbeautiful44/blog-rest-api-lifeisbeautiful"
 				)
 		),
 		externalDocs = @ExternalDocumentation(
-				description = "Spring boot Blog App Documentation [Github still left to connect]",
-				url = "github.com/lifeisbeautiful44"
+				description = "[GitHub]",
+				url = "https://github.com/lifeisbeautiful44/blog-rest-api-lifeisbeautiful"
 		)
 )
 public class BlogRestApiApplication {
